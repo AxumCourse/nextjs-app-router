@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="zh-Hans">
-      <body>{children}</body>
+      <body style={{ background: "#fecaca" }}>{children}</body>
     </html>
   );
 }
