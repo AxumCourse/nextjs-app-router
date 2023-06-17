@@ -4,6 +4,8 @@ import Link from "next/link";
 export default function Home({ searchParams }) {
   const isClientStr = searchParams.client || "";
   const isClient = isClientStr === "1";
+  // 取消下一行注释，制造一个错误
+  // throw "哎呀，搞出错了";
   return (
     <>
       {isClient ? <IPClient /> : <IPServer />}
